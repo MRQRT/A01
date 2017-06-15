@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>我在学习把自己的东西推送到远程仓库</title>
+</head>
+	<input type="button" name="an">
+	<input type="button" name="an">
+	<input type="button" name="an">
+<body>
+	<script type="text/javascript">
+		//学习一下ES6的结构语法 字符串的拼接
+		var name = `猫咪`,
+		     age = `6`,
+		   color = `red`,
+		    like = `pingpang`;
+	   const obj = `我是${name},我的年龄是${age},我喜欢的颜色是${color},我爱打${like}`;
+		console.log(obj);
+		//forEach 是一个非常6的语法
+		[1,2,3,4].forEach((a,b,c) => {
+			console.log(a)
+			console.log(b)
+			console.log(c)
+			});
+		//学习一下for of
+		let array = [1,2,3,4,5,6,7,87,8];
+		for(var n of array){
+			console.log(n);
+			document.getElementsByTagName('input')[0].onclick =(e)=> {console.log(e)};
+		};
+		let arrays = [11];//let 不可以重复定义变量，
+		console.log(array);
+		console.log(arrays);
+
+		//const 
+		const father = {
+			name: `小明`,
+			age: 15,
+			class: `高三0808`,
+			slogan: (a) => console.log(`我们是${name}, 我们有一个共同的名字hahaha`)
+		}
+		father.slogan(1);
+		//const 和  let 都只能定义一次
+		console.log(father);
+		//字符串截取
+		var mm = `1 2   43    86 3222 21`;
+		mm.split(/\s+/);
+		console.log(mm.length);
+		var nn = mm.split(/\s+/);
+		console.log(nn);
+		console.log(nn.length);
+	</script>
+</body>
+</html>//字符串截取
